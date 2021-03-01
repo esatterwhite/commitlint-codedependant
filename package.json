@@ -1,0 +1,102 @@
+{
+  "name": "commitlint-config-codedependant",
+  "version": "0.0.0",
+  "description": "Commitlint configuration for for enforcing codedependant commit styles",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "bin": "bin"
+  },
+  "files": [
+    "lib",
+    "bin",
+    "index.js",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "commitlint": "commitlint --from=origin/main --to=HEAD",
+    "lint": "eslint ./",
+    "lint:fix": "npm run lint -- --fix",
+    "release": "semantic-release",
+    "test": "tap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/esatterwhite/commitlint-config-codedependant.git"
+  },
+  "keywords": [
+    "commitlint",
+    "conventional commits"
+  ],
+  "author": "Eric Satterwhite <esatterwhite@wi.rr.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esatterwhite/commitlint-config-codedependant/issues"
+  },
+  "release": {
+    "extends": "semantic-release-npm-github-publish",
+    "branches": [
+      "main"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "./index.js"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "ignorePatterns": [
+      "node_modules/",
+      "coverage/"
+    ],
+    "extends": "codedependant",
+    "parserOptions": {
+      "ecmaVersion": 2019
+    }
+  },
+  "tap": {
+    "100": true,
+    "esm": false,
+    "ts": false,
+    "jsx": false,
+    "browser": false,
+    "check-coverage": true,
+    "output-file": ".tap",
+    "files": [
+      "test/unit",
+      "test/integration"
+    ],
+    "coverage-report": [
+      "text",
+      "text-summary",
+      "json",
+      "html"
+    ],
+    "nyc-arg": [
+      "--exclude=test/",
+      "--exclude=coverage/"
+    ]
+  },
+  "homepage": "https://github.com/esatterwhite/commitlint-config-codedependant#readme",
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "eslint-config-codedependant": "^2.1.5",
+    "execa": "^5.0.0",
+    "glob": "^7.1.6",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^17.4.0",
+    "semantic-release-npm-github-publish": "^1.4.0",
+    "tap": "^14.11.0"
+  },
+  "dependencies": {
+    "@commitlint/format": "^12.0.1",
+    "@commitlint/lint": "^12.0.1",
+    "@commitlint/load": "^12.0.1",
+    "@commitlint/read": "^12.0.1",
+    "commitlint": "^12.0.1",
+    "nopt": "^5.0.0"
+  }
+}
