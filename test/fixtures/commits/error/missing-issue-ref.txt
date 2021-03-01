@@ -1,0 +1,6 @@
+chore: this commit has no valid issue reference
+
+Everything needs and associated issue reference. If it is missing,
+it will cause an error
+
+This is footer

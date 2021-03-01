@@ -1,0 +1,12 @@
+commitlint-codedependant - Liting tool for git commit messages
+
+  usage: commitlint-codedependant [options]
+  usage: commitlint-codedependant --from origin/main --to HEAD --pwd $PWD
+
+  options:
+    -h, --help                 show help and usage
+    -v, --version              show version
+    -f, --from [origin/main]   the git ref where linting should begin
+    -t, --to [HEAD]            the git ref where linting should end
+    -p, --pwd <path>           set the root directory
+    --config <path>            path to an alternate commitlint config module
