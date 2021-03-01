@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://github.com/esatterwhite/commitlint-config-codedependant.git"
+    "url": "git+ssh://git@github.com/esatterwhite/commitlint-config-codedependant.git"
   },
   "keywords": [
     "commitlint",
