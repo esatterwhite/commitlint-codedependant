@@ -1,6 +1,6 @@
 ## commitlint-config-codedependant
 
-[Commitlint][] configuration to enforce commit message best practices
+[Commitlint][] configuration to enforce commit message best practices.
 
 ## Installation
 
