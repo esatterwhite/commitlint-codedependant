@@ -38,12 +38,6 @@
   "bugs": {
     "url": "https://github.com/esatterwhite/commitlint-config-codedependant/issues"
   },
-  "release": {
-    "extends": "semantic-release-npm-github-publish",
-    "branches": [
-      "main"
-    ]
-  },
   "commitlint": {
     "extends": [
       "./index.js"
@@ -85,13 +79,14 @@
   },
   "homepage": "https://github.com/esatterwhite/commitlint-config-codedependant#readme",
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "eslint": "^7.21.0",
     "eslint-config-codedependant": "^2.1.5",
     "execa": "^5.0.0",
     "glob": "^7.1.6",
     "rimraf": "^3.0.2",
     "semantic-release": "^17.4.0",
-    "semantic-release-npm-github-publish": "^1.4.0",
     "tap": "^14.11.0"
   },
   "dependencies": {
