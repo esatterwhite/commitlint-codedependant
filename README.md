@@ -29,7 +29,7 @@ Below is an example of linting all commits on the active branch that have not be
 
 ### Command Line Tool
 
-This package may additionally be installed globally as a command lint tool (`commitlint-codedependant`)
+This package may additionally be installed globally as a command lint tool (`commitlint-codedependant`).
 
 ```bash
 $ npm install -g commitlint-config-codedependant
