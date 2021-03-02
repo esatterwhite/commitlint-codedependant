@@ -1,5 +1,7 @@
 # Changlog
 
+# [2.0.0](https://github.com/esatterwhite/commitlint-config-codedependant/compare/v1.0.0...v2.0.0) (2021-03-02)
+
 # 1.0.0 (2021-03-02)
 
 
