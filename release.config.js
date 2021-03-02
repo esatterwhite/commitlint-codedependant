@@ -9,6 +9,7 @@ module.exports = {
     ['@semantic-release/commit-analyzer', {
       parserOpts: {
         noteKeywords: ['BREAKING', 'BREAKING CHANGE', 'BREAKING CHANGES']
+      , breakingHeaderPattern: /^(\w*)(?:\((.*)\))?!: (.*)$/
       , referenceActions: [
           'close', 'closes', 'closed'
         , 'fix', 'fixes', 'fixed'
