@@ -34,8 +34,8 @@ module.exports = {
     , changelogFile: 'CHANGELOG.md'
     }]
   , ['@semantic-release/npm', {
-      tarballDir: 'dist',
-      assets: 'dist/*.tgz'
+      tarballDir: 'dist'
+    , assets: 'dist/*.tgz'
     }]
   , ['@semantic-release/git', {
       assets: [
