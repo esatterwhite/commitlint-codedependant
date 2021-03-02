@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Commitlint configuration for for enforcing codedependant commit styles",
   "main": "index.js",
+  "bin": {
+    "commitlint-codedependant": "bin/cli.js"
+  },
   "directories": {
     "lib": "lib",
     "bin": "bin"
